@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="Tracker.ClassTaskFormularUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Tracker"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Border  x:Name="OutsideBorder" Background="White" CornerRadius="10" Margin="10,10,10,10">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0" Margin="10,0,10,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Margin="0,50,0,0" FontFamily="Bahnschrift SemiLight SemiCondensed" FontSize="15" Grid.Row="0">End Date</Label>
+                        <TextBox x:Name="TbEndDate" Padding="5" Grid.Row="1"></TextBox>
+
+                        <Label  Margin="0,10,0,0" FontFamily="Bahnschrift SemiLight SemiCondensed" FontSize="15" Grid.Row="2">Title</Label>
+                        <TextBox x:Name="TbTitle" Padding="5" Grid.Row="3"></TextBox>
+
+                        <Label  Margin="0,10,0,0" FontFamily="Bahnschrift SemiLight SemiCondensed" FontSize="15" Grid.Row="4">Type</Label>
+                        <ComboBox x:Name="CbType" Grid.Row="5" Background="White" SelectionChanged="CbType_SelectionChanged">
+                            <ComboBoxItem>Exam</ComboBoxItem>
+                            <ComboBoxItem>Assignment</ComboBoxItem>
+                        </ComboBox>
+
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Calendar x:Name="cCalendar" Margin="0,20,0,0" Grid.Row="0" Background="White" OpacityMask="Black" BorderBrush="White" SelectedDatesChanged="Calendar_SelectedDatesChanged"/>
+
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button x:Name="BtOk" Padding="5" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="100" BorderThickness="0" Background="#FFA2D2F7" FontSize="15" FontFamily="Bahnschrift SemiLight SemiCondensed" Foreground="White" Margin="10,0,10,0" Grid.Column="0" Grid.Row="8" Click="BtOk_Click">Ok</Button>
+                            <Button x:Name="BtCancel" Padding="5" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="100" BorderThickness="0" Background="#FFF58D8D" FontSize="15" FontFamily="Bahnschrift SemiLight SemiCondensed" Foreground="White" Grid.Column="1" Grid.Row="8" Click="BtCancel_Click">Cancel</Button>
+
+                        </Grid>
+
+
+                    </Grid>
+
+                </Grid>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker", "Tracker\Tracker.csproj", "{6955D762-C0F6-459F-840C-2960AE89F020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackerLibrary", "TrackerLibrary\TrackerLibrary.csproj", "{F970CCD3-216F-4213-8369-7446103EB5E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6955D762-C0F6-459F-840C-2960AE89F020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6955D762-C0F6-459F-840C-2960AE89F020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6955D762-C0F6-459F-840C-2960AE89F020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6955D762-C0F6-459F-840C-2960AE89F020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F970CCD3-216F-4213-8369-7446103EB5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F970CCD3-216F-4213-8369-7446103EB5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F970CCD3-216F-4213-8369-7446103EB5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F970CCD3-216F-4213-8369-7446103EB5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0877687-45BE-415C-8648-F013842B78A5}
+	EndGlobalSection
+EndGlobal
